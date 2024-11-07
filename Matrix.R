@@ -1,13 +1,21 @@
-x <- 1:5
-y <- 6:10
-z <- 11:15
+# Create two 2x3 matrices.
+matrix1 <- matrix(c(1,2,3,4,5,6), nrow = 3)
+matrix2 <- matrix(c(7,8,9,10,11,12), nrow = 3)
 
- # Create a matrix where x, y, z are columns
-cbind(x, y, z)
+# Pront
+print("The first matrix is:")
+print(matrix1)
+print("The second matrix is:")
+print(matrix2)
 
-# Create a matrix where x, y, z are rows
-rbind(x, y, z)
+# Add the matrices
+result1 <- matrix1 + matrix2
 
-matrix (data = 1:10,
-        nrow = 5,
-        ncol = 2)
+# Subtract the matrices
+result2 <- matrix1 - matrix2
+
+# Multiply the matrices
+result3 <- matrix1 * matrix2
+
+# Divide the matrices
+result4 <- matrix1 / matrix2
